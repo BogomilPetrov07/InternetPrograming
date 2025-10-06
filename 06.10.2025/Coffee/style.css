@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    text-align: center;
+    color: #6b4226;
+}
+
+h2 {
+    color: #6b4226;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+ul {
+    padding: 0;
+    padding-left: 20px;
+}
+
+li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    background-color: #f0e6d6;
+    transform: scale(1.0125);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+    float: right;
+    color: #6b4226;
+    font-weight: bold;
+}
+
+.drinks {
+    list-style-type: decimal;
+}
+
+.desserts {
+    list-style-type: upper-roman;
+}
+
+.others {
+    list-style-type: square;
+}

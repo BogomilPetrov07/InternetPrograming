@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta title="Галерия на птици">
+    <title>Галерия на птици</title>
+    <style>
+        body {
+            background-image: url('images/background.webp');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        /* Стилизация на заглавието */
+        h1 {
+            font-family: Arial, sans-serif;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        /* Стилизация на параграфите */
+        p {
+            font-family: Georgia, serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #34495e;
+            margin: 10px 0;
+        }
+
+        /* Стилизация на хоризонталната линия */
+        hr {
+            border: 0;
+            height: 2px;
+            background: #2c3e50;
+            margin: 10px 0;
+        }
+
+        /* Стилизация на галерията */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .gallery a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Стилизация на картите */
+        .bird-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 400px;
+            height: 500px;  
+        }
+
+        .bird-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .bird-card img {
+            width: 80%;
+            height: 50%;
+            border: 2px solid #2c3e50;
+            border-radius: 8px 8px;
+        }
+
+        .bird-card hr {
+            margin: 10px 0;
+        }
+
+        .bird-card p {
+            padding: 15px;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Заглавие на страницата -->
+    <h1>Галерия на птици</h1>
+
+    <!-- Хоризонтална линия -->
+    <hr>
+
+    <!-- Галерия с изображения на птици -->
+    <div class="gallery">
+        <a href="https://en.wikipedia.org/wiki/Tit_(bird)" target="_blank">
+            <div class="bird-card">
+                <h1 name="tit">Синигер</h1>
+                <!-- Първо изображение -->
+                <img src="images/tit.jpg" alt="Синигер">
+                <!-- Разделител -->
+                <hr>
+                <!-- Първи параграф -->
+                <p>
+                    Синигерът е малка и красива птица с ярко жълто коремче и синьо-зелени пера. Той е често срещан в
+                    паркове и градини.
+                </p>
+            </div>
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Stork" target="_blank">
+            <div class="bird-card">
+                <h1 name="stork">Щъркел</h1>
+                <!-- Второ изображение -->
+                <img src="images/stork.jpg" alt="Щъркел">
+                <!-- Разделител -->
+                <hr>
+                <!-- Втори параграф -->
+                <p>
+                    Щъркелът е символ на пролетта и е известен със своите дълги крака и червени клюнове. Той често
+                    гнезди на покриви и дървета.
+                </p>
+            </div>
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Eagle" target="_blank">
+            <div class="bird-card">
+                <h1 name="eagle">Орел</h1>
+                <!-- Трето изображение -->
+                <img src="images/eagle.jpg" alt="Орел">
+                <!-- Разделител -->
+                <hr>
+                <!-- Трети параграф -->
+                <p>
+                    Орелът е величествена хищна птица с остър поглед и мощни крила. Той е символ на сила и свобода.
+                </p>
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>

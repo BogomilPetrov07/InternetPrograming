@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="bg">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепти на любими ястия</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Стилове за заглавието */
+        h1 {
+            color: orange;
+            font-family: 'Verdana', sans-serif;
+            text-align: center;
+        }
+
+        /* Стилове за параграфите */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 20px;
+        }
+
+        /* Стилове за галерията */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        body {
+            background-color: #fff8e1;
+        }
+
+        .gallery a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Стилизация на картите */
+        .dish-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 400px;
+            height: 50%;
+        }
+
+        .dish-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .dish-card img {
+            width: 80%;
+            height: 300px;
+            border: 2px solid #2c3e50;
+            border-radius: 8px 8px;
+        }
+
+        .dish-card hr {
+            margin: 10px 0;
+        }
+
+        .dish-card p {
+            padding: 15px;
+            text-align: justify;
+        }
+
+        .dish-card .recipe-button {
+            display: inline-block;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: orange;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: 'Verdana', sans-serif;
+            transition: background-color 0.3s ease;
+        }
+
+        .dish-card .recipe-button:hover {
+            background-color: darkorange;
+        }
+
+        /* Стилизация на хоризонталната линия */
+        hr {
+            border: 0;
+            height: 2px;
+            background: #2c3e50;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Заглавие на страницата -->
+    <h1>Рецепти на любими ястия</h1>
+
+    <!-- Хоризонтална линия -->
+    <hr>
+
+    <!-- Галерия с рецепти -->
+    <div class="gallery">
+        <div class="dish-card">
+            <h1 name="moussaka">Мусака</h1>
+            <!-- Първо изображение -->
+            <img src="images/musaka.webp" alt="Мусака">
+            <!-- Разделител -->
+            <hr>
+            <!-- Първи параграф -->
+            <p>
+                Мусаката е традиционно българско ястие, приготвено с картофи, кайма и заливка от яйца и кисело мляко.
+                Тя е любима на много семейства заради богатия си вкус и аромат.
+            </p>
+            <!-- Разделител -->
+            <hr>
+            <!-- Бутон за рецептата -->
+            <a href="https://recepti.gotvach.bg/r-40414-%D0%A2%D1%80%D0%B0%D0%B4%D0%B8%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0_%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B0_%D0%BC%D1%83%D1%81%D0%B0%D0%BA%D0%B0"
+                class="recipe-button" target="_blank">Към рецептата</a>
+        </div>
+
+        <div class="dish-card">
+            <h1 name="shopska-salad">Шопска салата</h1>
+            <!-- Второ изображение -->
+            <img src="images/shopska-salad.webp" alt="Шопска салата">
+            <!-- Разделител -->
+            <hr>
+            <!-- Втори параграф -->
+            <p>
+                Шопската салата е свежо ястие, съчетаващо домати, краставици, чушки и сирене.
+                Тя е идеалното предястие за летните дни и е символ на българската кухня.
+            </p>
+            <!-- Разделител -->
+            <hr>
+            <!-- Бутон за рецептата -->
+            <a href="https://recepti.gotvach.bg/r-3670-%D0%A8%D0%BE%D0%BF%D1%81%D0%BA%D0%B0_%D1%81%D0%B0%D0%BB%D0%B0%D1%82%D0%B0"
+                class="recipe-button" target="_blank">Към рецептата</a>
+        </div>
+
+        <div class="dish-card">
+            <h1 name="tarator">Таратор</h1>
+            <!-- Трето изображение -->
+            <img src="images/tarator.jpg" alt="Таратор">
+            <!-- Разделител -->
+            <hr>
+            <!-- Трети параграф -->
+            <p>
+                Тараторът е освежаваща студена супа, приготвена с кисело мляко, краставици, чесън и копър.
+                Той е идеален за горещите летни дни и е любим на много българи.
+            </p>
+            <!-- Разделител -->
+            <hr>
+            <!-- Бутон за рецептата -->
+            <a href="https://www.supichka.com/%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0/423/%D1%82%D0%B0%D1%80%D0%B0%D1%82%D0%BE%D1%80-%D0%BF%D1%8A%D0%BB%D0%BD%D0%B0%D1%82%D0%B0-%D1%80%D0%B5%D1%86%D0%B5%D0%BF%D1%82%D0%B0"
+                class="recipe-button" target="_blank">Към рецептата</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Coffee Shop Menu</h1>
+
+    <h2>Coffees</h2>
+    <ul class="drinks">
+        <li>
+            Espresso 
+            <span class="button-container" style="float: right; margin-left: 10px;">
+                <button onclick="toggleDescription(this.parentElement.parentElement)" style="background: none; border: none;"><img src="images/info.png" alt="" style="width: 15px; height: 15px;"></button>
+            </span>
+            <span class="price">$2.50</span>
+            <div class="description" style="display:none;">A strong and bold coffee shot.</div>
+        </li>
+        <li>Americano <span class="price">$3.00</span></li>
+        <li>Cappuccino <span class="price">$3.50</span></li>
+        <li>Latte <span class="price">$4.00</span></li>
+        <li>Mocha <span class="price">$4.50</span></li>
+    </ul>
+
+    <h2>Soft drinks</h2>
+    <ul class="drinks">
+        <li>Hot Chocolate <span class="price">$3.00</span></li>
+        <li>Tea <span class="price">$2.00</span></li>
+    </ul>
+
+    <h2>Desserts</h2>
+    <ul class="desserts">
+        <li>Cheesecake <span class="price">$5.00</span></li>
+        <li>Chocolate Cake <span class="price">$4.50</span></li>
+        <li>Brownie <span class="price">$3.50</span></li>
+        <li>Ice Cream <span class="price">$3.00</span></li>
+    </ul>
+
+    <h2>Others</h2>
+    <ul class="others">
+        <li>Sandwich <span class="price">$6.00</span></li>
+        <li>Bagel <span class="price">$4.00</span></li>
+        <li>Fruit Salad <span class="price">$4.50</span></li>
+    </ul>
+</body>
+<script src="script.js"></script>
+</html>
