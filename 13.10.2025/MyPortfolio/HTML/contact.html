@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="../CSS/mainStyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Контакти</h1>
+        <p>Ето няколко начина по които можете да се свържете с мен</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Начало</a></li>
+            <li><a href="about.html">За мен</a></li>
+            <li><a href="skills.html">Умения</a></li>
+            <li><a href="projects.html">Проекти</a></li>
+            <li class="active"><a href="contact.html">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <fieldset>
+            <legend>Свържете се с мен</legend>
+            <form action="mailto:bogopetrov07@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Име:</label>
+                <input type="text" id="name" name="name" autocomplete="off"><br><br>
+
+                <label for="email">Имейл:</label>
+                <input type="email" id="email" name="email" autocomplete="off"><br><br>
+                
+                <label for="name">Тема:</label>
+                <input type="text" id="theme" name="theme" autocomplete="off"><br><br>
+                
+                <label for="message">Съобщение:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                
+                <input type="submit" value="Изпрати">
+        </fieldset>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2025 Богомил Петров. Всички права запазени.</p>
+    </footer>
+</body>
+
+</html>

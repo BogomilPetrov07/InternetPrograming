@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Employee data</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" autocomplete="off"><br><br>
+
+        <label for="job">Job:</label>
+        <input type="text" id="job" name="job"><br><br>
+
+        <label for="typeOfSalary">Type of salary:</label>
+        <select id="typeOfSalary" name="typeOfSalary">
+            <option value="bruto">Bruto</option>
+            <option value="neto">Neto</option>
+        </select><br><br>
+
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" name="salary"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="hidden" id="gender" name="gender"><br>
+        
+        <input type="radio" id="male-gender" name="gender" value="Male">
+        <label for="male-gender">Male</label><br>
+        <input type="radio" id="female-gender" name="gender" value="Female">
+        <label for="female-gender">Female</label><br>
+        <br>
+        <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
